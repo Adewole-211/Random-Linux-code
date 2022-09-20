@@ -1,0 +1,231 @@
+    1  shutdown now 
+    2  sudo du
+    3  sudo su
+    4  shutdown -r now
+    5  su
+    6  sudo su
+    7  shutdown now 
+    8  cd 
+    9  pwd
+   10  exit
+   11  tty
+   12  qho
+   13  who
+   14  exit
+   15  tty
+   16  who
+   17  ip a s
+   18  pwd
+   19  cd /home
+   20  pwd
+   21  tree
+   22  sudo yum install tree
+   23  tree
+   24  ls 
+   25  exit
+   26  ls
+   27  l -a
+   28  ls -a 
+   29  ls -al
+   30  ls -aF
+   31  ls /etc
+   32  ls -ld /etc
+   33  exit 
+   34  shutdown now
+   35  echo $SSH_C
+   36  echo $SSH_CONNECTION
+   37  ip a s
+   38  shutdown now
+   39  echo $SSH_CONNECTION 
+   40  cat /etc/hosts
+   41  cat /etc/hosts /etc/hostname
+   42  cat /etc/services
+   43  wc -l /etc/servoces
+   44  wc -l /etc/services
+   45  less /etc/services
+   46  head /etc/services
+   47  head -n3 /etc/services
+   48  tail -n3 /etc/services
+   49  tail /etc/passwd
+   50  yum list installed
+   51  yum list installed | grep kernel
+   52  yum list installed | grep ^kernel
+   53  sudo yum install ntp
+   54  cat /etc/ntp.conf
+   55  wc -l /etc/ntp.conf
+   56  cp /etc/ntp.conf .
+   57  ls 
+   58  wc -l ntp.conf
+   59  grep server ntp.conf
+   60  grep ^server ntp.conf
+   61  type grep
+   62  grep ^server ntp.conf
+   63  grep '\bserver\b' ntp.conf
+   64  sudo yum install words
+   65  grep -E 'ion$' /usr/share/dict/words
+   66   grep -E '^^C..ute$' /usr/share/dict/words
+   67   grep -E '^po..ute$' /usr/share/dict/words
+   68   grep -E '[aeiou]{5}' /usr/share/dict/words
+   69   grep -E '[aeiou]{6}' /usr/share/dict/words
+   70    grep -E '[aeiou]{6}' /usr/share/dict/words
+   71  sed '/^#/d ; /^$/d'
+   72  sed '/^#/d ; /^$/d' ntp.conf
+   73  type ls 
+   74  type grep
+   75  type vi
+   76  function clean_file { sed -i '/^#/d;/^$/d' $1; }
+   77  clean_file ntp.conf
+   78  cat ntp.conf
+   79  cp ntp.conf ntp.new
+   80  ls
+   81  echo new >> ntp.new
+   82  diff ntp.conf ntp.new
+   83  vi ntp.new
+   84  nano ntp.new
+   85  echo ntp.new
+   86  cat ntp.new
+   87  diff ntp.conf ntp.new
+   88  diff /etc/ntp.conf ntp.conf
+   89  rpm -V ntp
+   90  sudo rpm -V ntp
+   91  rpm -V ntp
+   92  sudo rpm -V ntp
+   93  md5sum /usr/bin/passwd
+   94  md5sum /usr/bin/passwd > server1
+   95  ssh 192.168.56.102
+   96  ssh 192.168.56.102/24
+   97  ssh 192.168.56.102
+   98  ssh gibbyII
+   99  ssh 192.168.56.102
+  100  ssh gibbyII@192.168.56.102
+  101  md5sum /usr/bin/passwd
+  102  md5sum /usr/bin/passwd > gibby1
+  103  ssh gibbyII@192.168.56.102
+  104  find /usr/share/doc -name '*.pdf'
+  105  find /usr/share/doc -name '*.pdf' -print
+  106  find /usr/share/doc -name '*.pdf' -exec
+  107  find /usr/share/doc -name '*.pdf' -exec cp {} . \;
+  108  ls
+  109  find -name '*.pdf'
+  110  find -name '*.pdf' -delete
+  111  ls
+  112  find /etc/ -type l
+  113  find /etc/ -maxdepth 1 -type l
+  114  df -h /boot
+  115  find /boot -size +20000K -type f 
+  116  find /boot -size +20000k -type f 
+  117  find /boot -size +10000k -type f 
+  118  find /boot -size +10000k -type f  -exec du -h {} \;
+  119  shutdown now
+  120  ip addr show
+  121  cat /etc/resolve.conf
+  122  cat /etc/resolv.conf
+  123  sudo yum update
+  124  ip addr show 
+  125  nano
+  126  ls 
+  127  who
+  128  ls > mypipe
+  129  ip a s
+  130  touch newfile
+  131  ls -l newfile
+  132  > newfile1
+  133  ls -l newfile1
+  134  touch newfile
+  135  ls -l newfile
+  136  stat newfile
+  137  [gibby@gibby1 ~]$ ^V
+  138  touch -d '10 April 1973' newfile
+  139  stat newfile
+  140  nano newfile
+  141  vimtutor
+  142  vi newfile 
+  143  pwd
+  144  cd
+  145  pwd
+  146  vi .vimrc
+  147  vi newfile 
+  148  cat file99 
+  149  > file1
+  150  cat newfile
+  151  > newfile 
+  152  cat newfile
+  153  ls
+  154  ls > newfile
+  155  cat newfile
+  156  df -h >> newfile
+  157  cat newfile
+  158  df -h > file1
+  159  cat file1
+  160  df -h 1> file1
+  161  df -h 1>> file1
+  162  cat file1
+  163  df -h 1>> file1
+  164  less file1
+  165  > file1
+  166  cat file1
+  167  set  -o
+  168  set -o noclobber
+  169  set  -o
+  170  set  -o | grep clobber
+  171  date +%F
+  172  date +%F > file1
+  173  date +%F > file2
+  174  date +%F >| file2
+  175  ls $HOME
+  176  ls $HOME >> file2
+  177  cat file2
+  178  cd
+  179  vi .bashrc
+  180  set +o noclobber 
+  181  set  -o | grep clobber
+  182  bash 
+  183  set -o | grep noclobber
+  184  ls /etc
+  185  ls /etcw
+  186  ls /etcw > err
+  187  cat err
+  188  ls /etcw > err
+  189  ls /etcw 2> err
+  190  ls /etcw 2>| err
+  191  cat err
+  192  find /etc -type l
+  193  find /etc -type l 2> /dev/null
+  194  find /etc -type l &> err.txt
+  195  less err.txt
+  196  mail
+  197  df
+  198  df -hlT
+  199  df -hlT > diskfree
+  200  mail -s "Disk Free" gibby < diskfree
+  201  mail
+  202  cat > mynewfile <<END
+  203  this is a little file that we can create that we can create even with scripts
+  204  END
+  205  cat mynewfile
+  206  ls | wc -l 
+  207  head -n1 /etc/passwd
+  208  cut -f7 -d: /etc/passwd
+  209  cut -f7 -d: /etc/passwd | sort
+  210  cut -f7 -d: /etc/passwd | sort | uniq
+  211  cut -f7 -d: /etc/passwd | sort | uniq | wc -l 
+  212  ls -l $(tty)
+  213  ls -l /dev/sda
+  214  mkfifo mypipe
+  215  ls -l mypipe
+  216  ls -F mypipe
+  217  wc -l < mypipe
+  218  ls > f89
+  219  ls | tee f89
+  220  cat f89
+  221  sudo echo '127.0.0.1 bob' >> etc/hosts
+  222  sudo echo '127.0.0.1 bob' >> /etc/hosts
+  223  echo '127.0.0.1 bob' >> | sudo tee -a /etc/hosts
+  224  echo '127.0.0.1 bob' | sudo tee -a /etc/hosts
+  225  tail -n 1 /etc/hosts
+  226  shutdown now
+  227  histoy | less
+  228  history | less
+  229  history | less 
+  230  cd Desktop
+  231  history > lesson15.08.2022
